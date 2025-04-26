@@ -1,32 +1,30 @@
-FILE INFORMATION
+# Fall Detection System
 
-	- README.txt: to know more about our project
-	- falltracker.h5: this is our final model created by training that will be use to see the final result of our project
-	- FallDetection.ipynb & FallFetection.py: these are Python file to run with or without Jupyter Notebook to see our final result
-	- .ipynb_checkpoints: this file is important to run FallDetection.ipynb in Jupyter Notebook
-	- ModelCreation.ipynb: this file is show to you to understand how we have train our model 
-	- Data: there are files for images and labels
-	- aug_data: This is a file that you will be use for create your trainning model
-	- bonus with the file CSV_ACCELERATION and CSV_ELDERLY: two bonus file which are studies that we have done in parallel to our fall recognition 
-	  by deep learning. We did not keep these studies because the data are too perfect and prevent us from an interesting analysis for the CSV_ELDERLY file 
-	  and for the second file, we did not push the study enough to do the main work
+> Deep learning-based fall detection system using computer vision and real-time classification.
 
+## About the Project
 
-SEE OUR RESULT
+This project aims to detect falls in real-time using a deep learning model trained on image data.  
+Using computer vision and TensorFlow, the system can recognize whether a person has fallen or not based on webcam input.
 
-	1) Install OpenCV, Tensorflow and Numpy in the command shell:
-		$ pip install opencv-python
-		$ pip install tensorflow
-		$ pip install numpy
+## File Information
 
-	2) Setup your webcam
+- **README.txt**: General information about the project.
+- **falltracker.h5**: The trained deep learning model used for real-time fall detection.
+- **FallDetection.ipynb** and **FallDetection.py**: Python scripts to run the fall detection system, with or without Jupyter Notebook.
+- **.ipynb_checkpoints/**: Jupyter Notebook checkpoints needed for running `FallDetection.ipynb`.
+- **ModelCreation.ipynb**: Notebook showing how the model was trained, including data augmentation and training steps.
+- **Data/**: Folder containing original images and labels used for training.
+- **aug_data/**: Augmented data used to improve model performance during training.
+- **Bonus/**: Contains two CSV files from additional studies:
+  - `CSV_ACCELERATION.csv`: Study based on acceleration data for fall detection (incomplete).
+  - `CSV_ELDERLY.csv`: Study based on elderly movement data, which was not used due to overly perfect data limiting realistic analysis.
 
-	3) Open the file FallDetection.py or FallDetection.ipynb and run it, a window will be open
+## How to See the Result
 
-	4) This window show you what your webcam see by a rectangle around the person: 
-		- a red rectangle if the person is fall
-		- a green rectangle if the person is not fall
+1. Install the required libraries:
 
-	5) If you want to stop the program, press 'q'
-
-
+```bash
+pip install opencv-python
+pip install tensorflow
+pip install numpy```
